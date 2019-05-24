@@ -18,12 +18,36 @@ require_once("config.php");
 //=============================================
 
 //Carrega usuario por Login e Senha 
+//======================
+// LOGIN
+//$usuario= new Usuario ();
+//$usuario -> login("bruno","123");
+//echo  $usuario;
+
+// INsert
+//==============
+//$aluno= new Usuario();
+//$aluno->setDeslogin("aluno");
+//$aluno->setDessenha("@luno");
+
+//$aluno->insert();
+
+//echo $aluno;
+
+// ALTERAR USUARIO
+
+//$usuario= new Usuario ();
+//$usuario -> loadById(8);
+//$usuario ->update("Professor","123");
+//echo $usuario;
+//===================================================
+    $usuario=  new Usuario();
+    $usuario-> loadById(8);
+    $usuario->delete();
+
+    echo $usuario;
 
 
-$usuario= new Usuario ();
-$usuario -> login("bruno","123");
-
-echo  $usuario;
 
 
 ?>
